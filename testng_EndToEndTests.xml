@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name = "AppyParking_Application" verbose = "1">	
+
+	<listeners>
+		<listener class-name="com.crm.qa.listeners.ExtentReportListener"/>
+	</listeners>
+	
+   <test name = "E2E_NewUserRegistration_Test">	
+   <parameter name="registerYN" value="N" />
+   <parameter name="userName" value="Henry Jackson" />
+   <parameter name="userEmail" value="Henry.Jackson@gmail.com" />  
+   <parameter name="userPassword" value="Appium01" /> 
+   <parameter name="regNum" value="PO11 WEZ" /> 
+      <classes>
+      	 <class name = "com.qa.appyParking.tests.HomePageTest" > 	 	
+      	 </class>
+      </classes>
+    </test>
+    <test name = "E2E_AlreadyRegistered_User_Test">	
+   <parameter name="registerYN" value="Y" />
+   <parameter name="userName" value="Manikanth Erukulla" />
+   <parameter name="userEmail" value="manikanth.e@gmail.com" />  
+   <parameter name="userPassword" value="Manasa01" /> 
+   <parameter name="regNum" value="PO11 WEP" /> 
+      <classes>
+      	 <class name = "com.qa.appyParking.tests.HomePageTest" > 	 	
+      	 </class>
+      </classes>
+    </test>
+</suite>

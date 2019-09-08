@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AppyParking_Application_Regression" duration-ms="53552" started-at="2019-06-12T15:42:58Z" finished-at="2019-06-12T15:43:52Z">
+    <groups>
+    </groups>
+    <test name="SearchPageTest" duration-ms="53552" started-at="2019-06-12T15:42:58Z" finished-at="2019-06-12T15:43:52Z">
+      <class name="com.qa.appyParking.tests.SearchPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.appyParking.tests.SearchPageTest@7f416310]" name="setUp" is-config="true" duration-ms="24432" started-at="2019-06-12T15:42:58Z" finished-at="2019-06-12T15:43:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Manikanth Erukulla]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Manikanth.e@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Manasa01]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[PO11 WEZ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchLocationTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.appyParking.tests.SearchPageTest@7f416310]" name="searchLocationTest" duration-ms="12003" started-at="2019-06-12T15:43:23Z" data-provider="getSearchData" finished-at="2019-06-12T15:43:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ilford]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FREE PARKING]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLocationTest -->
+        <test-method status="FAIL" signature="searchLocationTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.appyParking.tests.SearchPageTest@7f416310]" name="searchLocationTest" duration-ms="10635" started-at="2019-06-12T15:43:36Z" data-provider="getSearchData" finished-at="2019-06-12T15:43:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Canary Wharf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12h 40m]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+ Free Parking is expected expected [12h 40m] but found [FREE PARKING]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+ Free Parking is expected expected [12h 40m] but found [FREE PARKING]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.qa.appyParking.tests.SearchPageTest.searchLocationTest(SearchPageTest.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLocationTest -->
+      </class> <!-- com.qa.appyParking.tests.SearchPageTest -->
+    </test> <!-- SearchPageTest -->
+  </suite> <!-- AppyParking_Application_Regression -->
+</testng-results>

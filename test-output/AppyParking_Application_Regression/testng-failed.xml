@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AppyParking_Application_Regression]">
+  <listeners>
+    <listener class-name="com.crm.qa.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SearchPageTest(failed)">
+    <parameter name="userPassword" value="Manasa01"/>
+    <parameter name="registerYN" value="N"/>
+    <parameter name="regNum" value="PO11 WEZ"/>
+    <parameter name="userEmail" value="Manikanth.e@gmail.com"/>
+    <parameter name="userName" value="Manikanth Erukulla"/>
+    <classes>
+      <class name="com.qa.appyParking.tests.SearchPageTest">
+        <methods>
+          <include name="searchLocationTest" invocation-numbers="1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.appyParking.tests.SearchPageTest -->
+    </classes>
+  </test> <!-- SearchPageTest(failed) -->
+</suite> <!-- Failed suite [AppyParking_Application_Regression] -->

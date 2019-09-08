@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="8" name="Failed suite [AppyParking_NewUserRegistration]">
+  <test thread-count="5" verbose="8" name="E2E_Register_NoThanks_Flow(failed)">
+    <parameter name="userPassword" value="Manasa01"/>
+    <parameter name="registerYN" value="N"/>
+    <parameter name="userEmail" value="manikanth.e@gmail.com"/>
+    <parameter name="userName" value="Manikanth Erukulla"/>
+    <classes>
+      <class name="com.qa.appyParking.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="viewParkingRulesTest"/>
+        </methods>
+      </class> <!-- com.qa.appyParking.tests.HomePageTest -->
+    </classes>
+  </test> <!-- E2E_Register_NoThanks_Flow(failed) -->
+</suite> <!-- Failed suite [AppyParking_NewUserRegistration] -->

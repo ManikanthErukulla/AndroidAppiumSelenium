@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AppyParking_Application]">
+  <test thread-count="5" name="E2E_AlreadyRegistered_User_Test(failed)">
+    <parameter name="userPassword" value="Manasa01"/>
+    <parameter name="registerYN" value="N"/>
+    <parameter name="regNum" value="PO11 WEP"/>
+    <parameter name="userEmail" value="manikanth.e@gmail.com"/>
+    <parameter name="userName" value="Manikanth Erukulla"/>
+    <classes>
+      <class name="com.qa.appyParking.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectCheapCarPark"/>
+        </methods>
+      </class> <!-- com.qa.appyParking.tests.HomePageTest -->
+    </classes>
+  </test> <!-- E2E_AlreadyRegistered_User_Test(failed) -->
+  <test thread-count="5" name="E2E_NewUserRegistration_Test(failed)">
+    <parameter name="userPassword" value="Appium01"/>
+    <parameter name="registerYN" value="Y"/>
+    <parameter name="regNum" value="PO11 WEZ"/>
+    <parameter name="userEmail" value="Henry1.m@gmail.com"/>
+    <parameter name="userName" value="Henry1 Mathews"/>
+    <classes>
+      <class name="com.qa.appyParking.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="viewParkingRulesTest"/>
+          <include name="searchLocationTest"/>
+          <include name="selectCheapCarPark"/>
+        </methods>
+      </class> <!-- com.qa.appyParking.tests.HomePageTest -->
+    </classes>
+  </test> <!-- E2E_NewUserRegistration_Test(failed) -->
+</suite> <!-- Failed suite [AppyParking_Application] -->

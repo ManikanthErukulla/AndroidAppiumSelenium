@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "AppyParking_Application_Regression" verbose = "1">	
+
+	<listeners>
+		<listener class-name="com.crm.qa.listeners.ExtentReportListener"/>
+	</listeners>
+
+   <test name = "Regression_RegisterUserPage_Test">	
+   <parameter name="userName" value="Srinivas" />
+   <parameter name="userEmail" value="Srinivas@gmail.com" />  
+   <parameter name="userPassword" value="Appium01" /> 
+      <classes>
+      	 <class name = "com.qa.appyParking.tests.RegisterUserPageTest" > 	
+      	 	  <methods>
+		        <exclude name="alreadyRegisteredClickTest" />
+		      </methods> 	     
+      	 </class>  
+      </classes>
+   </test>
+   <test name = "Regression_TermsAndConditionsPageTest">	
+   <parameter name="userName" value="Henry3 Mathews" />
+   <parameter name="userEmail" value="Henry3.m@gmail.com" />  
+   <parameter name="userPassword" value="Appium01" /> 
+   <parameter name="regNum" value="PO11 WEZ" /> 
+      <classes>
+      	 <class name = "com.qa.appyParking.tests.TermsAndConditionsPageTest" > 	 	
+      	 </class>
+      </classes>
+    </test>
+</suite>
